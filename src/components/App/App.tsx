@@ -48,7 +48,7 @@ export default function App() {
     return (
         <div className={styles.app}>
             <Toaster position="top-center"/>
-            <SearchBar onSubmit={handleSearch}/>
+            <SearchBar onSearch={handleSearch}/>
             {loading && <Loader/>}
             {error && <ErrorMessage/>}
             <MovieGrid movies={movies} onSelect={handleSelectMovie}/>
